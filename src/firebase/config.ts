@@ -5,12 +5,12 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDttf8IbrT6kkMUYk3I-oyrSsfN4wZRTrE",
-  authDomain: "layers-dating-app.firebaseapp.com",
-  projectId: "layers-dating-app",
-  storageBucket: "layers-dating-app.firebasestorage.app",
-  messagingSenderId: "707754176824",
-  appId: "1:707754176824:web:acc1ff552d1a46952691cd"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);

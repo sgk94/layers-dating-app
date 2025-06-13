@@ -15,10 +15,10 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (firebaseUser) => {
+      console.log("Restored user:", firebaseUser);
       setUser(firebaseUser);
       setLoading(false);
     });
-
     return unsub;
   }, []);
 

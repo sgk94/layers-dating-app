@@ -20,7 +20,9 @@ export default function AuthForm() {
 
     try {
       if (isLogin) {
+        console.log("Logging in...");
         await signInWithEmailAndPassword(auth, email, password);
+        console.log("Auth state after login:", auth.currentUser);
       } else {
         await createUserWithEmailAndPassword(auth, email, password);
       }

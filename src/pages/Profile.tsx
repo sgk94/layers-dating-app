@@ -10,6 +10,6 @@ if (loading) return <p>Loading...</p>;
 if (!user) return <Navigate to="/auth" />;
 
   return (
-    <h1><div>Welcome, {user.email}</div></h1>
+    <h1>Profile</h1>
   )
 }
