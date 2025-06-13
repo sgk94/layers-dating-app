@@ -5,13 +5,20 @@
 
   .navbar {
     display: flex;
-    gap: 6px;
+    gap: 8px;
     justify-content: right;
     background-color: #fffacd;
 
     .navbar__links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-decoration: none;
       color: black;
+
+      &:hover {
+        color: var(--color-accent);
+      }
     }
   }
 }

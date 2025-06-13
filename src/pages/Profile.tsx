@@ -1,4 +1,4 @@
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 import { Navigate } from 'react-router-dom';
 
 export default function Chat() {
@@ -6,7 +6,7 @@ export default function Chat() {
 
   if (loading) return <p>Loading...</p>;
 
-  if (!user) return <Navigate to="/profile" />;
+  if (!user) return <Navigate to="/auth" />;
 
   return <h1>Profile</h1>;
 }

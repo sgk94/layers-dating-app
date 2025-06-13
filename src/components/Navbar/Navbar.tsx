@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../hooks/useAuth';
 import Button from '../Button/Button';
 import styles from './Navbar.module.scss';
 
@@ -21,7 +21,7 @@ export default function Navbar() {
           Profile
         </Link>
 
-        {user && <Button>Log Out</Button>}
+        {user ? <Button>Log Out</Button> : <Button>Sign In</Button>}
       </nav>
     </header>
   );
