@@ -1,0 +1,17 @@
+.navbarContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  .navbar {
+    display: flex;
+    gap: 6px;
+    justify-content: right;
+    background-color: #fffacd;
+
+    .navbar__links {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
